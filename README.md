@@ -1,16 +1,16 @@
-### Hi there 👋
+## 👋 Hi, I'm [Mridul Barman] 
+[A short tagline about what you do or offer]
 
-<!--
-**mridulbarman/mridulbarman** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![Your Image]](https://avatars.githubusercontent.com/u/108614368?v=4)
 
-Here are some ideas to get you started:
+### About Me
+* 🌱 Learning and exploring  [vue.js], [motion design], etc.
+* 💬 Feel free to reach out for collaborations or just to say hi!
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+### Contact
+* 📫  [Email](mailto:mridul@developerzilla.com)
+* 🔗  [LinkedIn](https://www.linkedin.com/in/eembee/)
+
+
+[![GitHub Stats]](https://github-readme-stats.vercel.app/api?username=mridulbarman)
