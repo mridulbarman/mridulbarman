@@ -1,0 +1,5 @@
+{
+    "workbench.browser.dataStorage": "default",
+    "workbench.browser.autoReloadOnFileChange": true,
+    "workbench.browser.enableChatTools": false
+}

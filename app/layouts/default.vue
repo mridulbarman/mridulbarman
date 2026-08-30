@@ -1,7 +1,7 @@
 <template>
-    <div class="default-layout min-h-screen container mx-auto flex flex-col">
+    <div class="default-layout min-h-screen text-foreground">
         <the-navbar />
-        <div class="flex-auto">
+        <div class="min-h-[calc(100vh-5rem)]">
             <slot />
         </div>
         <the-footer />
