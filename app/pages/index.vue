@@ -35,9 +35,6 @@
           <h1 :key="activeTitle">{{ activeTitle }}</h1>
         </Transition>
       </div>
-      <div class="hero-art" role="img" aria-label="Illustrated portrait">
-        <img src="/images/hero-character.png" alt="Illustrated portrait" />
-      </div>
       <div class="hero-caption left-caption">FULL-STACK<br>DEVELOPER</div>
       <div class="hero-caption right-caption">DIRECTOR OF<br>VISUAL STORYTELLING</div>
       <a class="explore-button" href="#work">EXPLORE <span>↓</span></a>
@@ -308,13 +305,6 @@ onUnmounted(() => {
 .title-enter-from { opacity: 0; transform: translateY(24px); }
 .title-leave-to { opacity: 0; transform: translateY(-24px); }
 
-.hero-art {
-  position: absolute; right: 50%; bottom: 0; width: min(48vw, 640px); height: 88%;
-  z-index: 4; display: flex; justify-content: center; align-items: flex-end;
-  transform: translateX(50%); pointer-events: none;
-}
-.hero-art img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; mix-blend-mode: multiply; }
-
 .hero-caption { position: absolute; bottom: 18%; z-index: 5; font-size: 17px; font-weight: 700; line-height: 1.05; }
 .left-caption { left: 25%; }
 .right-caption { right: 25%; text-align: right; }
@@ -344,7 +334,6 @@ onUnmounted(() => {
   .moving-card { flex-basis: 220px; height: 148px; }
   .card-shell { width: 220px; height: 148px; transform: scale(0.733); transform-origin: top left; }
   .moving-card:hover .card-shell, .moving-card:focus-visible .card-shell { transform: translateY(-12px) scale(0.76); }
-  .hero-art { width: 94vw; height: 76%; }
   .hero-caption { bottom: 16%; font-size: 10px; }
   .left-caption { left: 8%; }
   .right-caption { right: 8%; }
@@ -357,8 +346,6 @@ onUnmounted(() => {
 }
 .skill-title{display:block;width:210px;margin:8px 0 0;font-size:12px;line-height:1;letter-spacing:.06em;text-align:center}
 
-.hero-grid,.card-window,.hero-title,.hero-caption,.explore-button{filter:blur(3px);transition:filter .55s ease}
-.hero-section:hover .hero-grid,.hero-section:hover .card-window,.hero-section:hover .hero-title,.hero-section:hover .hero-caption,.hero-section:hover .explore-button,.hero-section:focus-within .hero-grid,.hero-section:focus-within .card-window,.hero-section:focus-within .hero-title,.hero-section:focus-within .hero-caption,.hero-section:focus-within .explore-button{filter:blur(0)}
 .projects-section{--work-blue:#1111ee;--work-ink:#09091b;--work-muted:#49495b;background:transparent;color:#fff;padding:clamp(5rem,9vw,8rem) max(1.25rem,calc((100% - 1180px)/2)) clamp(2rem,4vw,3rem);}.projects-heading{max-width:760px;margin:0 auto clamp(4rem,7vw,6rem);text-align:center}.projects-heading p,.category-title p{margin:0 0 .85rem;font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.projects-heading h2{margin:0;font-size:clamp(4rem,11vw,9rem);line-height:.82;letter-spacing:-.09em}.projects-heading>span{display:block;max-width:430px;margin:1.5rem auto 0;font-size:clamp(.95rem,1.5vw,1.1rem);line-height:1.35;font-weight:600}.skills-strip{position:relative;width:105vw;left:50%;transform:translateX(-50%);margin-top:calc(clamp(5rem,9vw,8rem) * -1);margin-bottom:clamp(3rem,6vw,5rem);padding:1.75rem 0;background:transparent;z-index:2;display:flex;align-items:center}.skills-strip::before{content:"";position:absolute;top:10px;left:0;right:0;bottom:10px;background:var(--work-blue);z-index:-1;filter:url(#paper-sticker)}.skills-strip__track{display:flex;width:max-content;animation:skills-marquee 42s linear infinite;will-change:transform}.skills-strip__group{display:flex;flex:none;align-items:center;gap:.65rem;padding-right:.65rem}.skill-chip{display:inline-flex;align-items:center;min-height:2.1rem;padding:.5rem .8rem;border:none;border-radius:.25rem;color:var(--work-blue);font-size:.68rem;font-weight:800;letter-spacing:.04em;line-height:1;white-space:nowrap;background:white}.skill-chip::before{content:"";width:.35rem;height:.35rem;margin-right:.55rem;border-radius:50%;background:var(--work-blue)}.work-options{display:flex;gap:.6rem;width:100%;margin:0 0 clamp(3rem,5vw,4.5rem);padding-bottom:.75rem;overflow-x:auto;scrollbar-width:none}.work-options::-webkit-scrollbar{display:none}.work-option{display:flex;flex:1 1 0;align-items:center;gap:.7rem;min-width:175px;padding:.9rem 1rem;border:1px solid rgba(255,255,255,.45);border-radius:.35rem;color:#fff;font-size:.8rem;font-weight:900;text-decoration:none;text-transform:uppercase;transition:background-color .25s ease,color .25s ease,border-color .25s ease,transform .25s ease}.work-option:hover{background:#fff;color:var(--work-blue);border-color:#fff;transform:translateY(-3px)}.work-option:focus-visible{outline:2px solid #fff;outline-offset:4px}.work-option__index{opacity:.62;font-size:.65rem}.work-option__arrow{margin-left:auto;font-size:1.1rem;transition:transform .25s ease}.work-option:hover .work-option__arrow{transform:translate(3px,3px)}.category-rail{display:flex;gap:clamp(1rem,3vw,2rem);width:100%;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain}.category-rail::-webkit-scrollbar{display:none}.project-category{flex:0 0 min(100%,1040px);min-width:0;padding-top:clamp(2.5rem,5vw,4rem);border-top:1px solid rgba(255,255,255,.45);scroll-snap-align:start;scroll-margin-top:1.5rem}.category-heading{display:flex;align-items:end;justify-content:space-between;gap:2rem;margin-bottom:2rem}.category-title p{opacity:.7}.category-title h3{margin:0;font-size:clamp(2.4rem,5vw,4.7rem);line-height:.88;letter-spacing:-.075em}.category-heading>span{max-width:330px;padding-bottom:.2rem;font-size:.95rem;line-height:1.35;font-weight:600;text-align:right}.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,360px));justify-content:center;gap:clamp(1rem,3vw,2rem)}@keyframes skills-marquee{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:700px){.work-options{margin-bottom:3rem}.work-option{flex:0 0 auto}.category-heading{display:block}.category-heading>span{display:block;margin-top:1rem;text-align:left}.projects-grid{grid-template-columns:minmax(0,360px)}.project-category{flex-basis:100%}}@media(prefers-reduced-motion:reduce){.category-rail{scroll-behavior:auto}.skills-strip__track{animation-play-state:paused}.work-option,.work-option__arrow{transition:none}}
  .projects-grid{display:flex;justify-content:flex-start;gap:clamp(1rem,3vw,2rem);width:100%;padding:0 .25rem .9rem;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-inline:contain}.projects-grid::-webkit-scrollbar{display:none}.projects-grid:deep(.project-card){flex:0 0 min(360px,calc(100vw - 2.5rem));scroll-snap-align:start}@media(prefers-reduced-motion:reduce){.projects-grid{scroll-behavior:auto}}
  .category-list{display:block;width:100%}.category-list .project-category{flex:none}.category-list .project-category+.project-category{margin-top:clamp(5rem,10vw,9rem)}
